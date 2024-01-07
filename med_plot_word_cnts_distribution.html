@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="f5b67856-5433-4ed2-a8cd-7e272d7de3db" data-root-id="p5005" style="display: contents;"></div>
+  
+    <script type="application/json" id="p5052">
+      {"5c05997b-1312-4e04-8482-7ac68029fb8a":{"version":"3.3.0","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p5005","attributes":{"width":800,"height":500,"x_range":{"type":"object","name":"DataRange1d","id":"p5006","attributes":{"start":0,"end":293}},"y_range":{"type":"object","name":"DataRange1d","id":"p5007","attributes":{"start":-10,"end":1668}},"x_scale":{"type":"object","name":"LinearScale","id":"p5014"},"y_scale":{"type":"object","name":"LinearScale","id":"p5015"},"title":{"type":"object","name":"Title","id":"p5012","attributes":{"text":"Distribution of word counts in reviews","text_font_size":"16px"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p5039","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p5001","attributes":{"selected":{"type":"object","name":"Selection","id":"p5002","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p5003"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAAGAAAABkAAAAaAAAAGwAAABwAAAAdAAAAHgAAAB8AAAAgAAAAIQAAACIAAAAjAAAAJAAAACUAAAAmAAAAJwAAACgAAAApAAAAKgAAACsAAAAsAAAALQAAAC4AAAAvAAAAMAAAADEAAAAyAAAAMwAAADQAAAA1AAAANgAAADcAAAA4AAAAOQAAADoAAAA7AAAAPAAAAD0AAAA+AAAAPwAAAEAAAABBAAAAQgAAAEMAAABEAAAARQAAAEYAAABHAAAASAAAAEkAAABKAAAASwAAAEwAAABNAAAATgAAAE8AAABQAAAAUQAAAFIAAABTAAAAVAAAAFUAAABWAAAAVwAAAFgAAABZAAAAWgAAAFsAAABcAAAAXQAAAF4AAABfAAAAYAAAAGEAAABiAAAAYwAAAGQAAABlAAAAZgAAAGcAAABoAAAAaQAAAGoAAABrAAAAbAAAAG0AAABuAAAAbwAAAHAAAABxAAAAcgAAAHMAAAB0AAAAdQAAAHYAAAB3AAAAeAAAAHkAAAB6AAAA"},"shape":[123],"dtype":"int32","order":"little"}],["word_cnt",{"type":"ndarray","array":{"type":"bytes","data":"AQAAAAIAAAADAAAABAAAAAUAAAAGAAAABwAAAAgAAAAJAAAACgAAAAsAAAAMAAAADQAAAA4AAAAPAAAAEAAAABEAAAASAAAAEwAAABQAAAAVAAAAFgAAABcAAAAYAAAAGQAAABoAAAAbAAAAHAAAAB0AAAAeAAAAHwAAACAAAAAhAAAAIgAAACMAAAAkAAAAJQAAACYAAAAnAAAAKAAAACkAAAAqAAAAKwAAACwAAAAtAAAALgAAAC8AAAAwAAAAMQAAADIAAAAzAAAANAAAADUAAAA2AAAANwAAADgAAAA5AAAAOgAAADsAAAA8AAAAPQAAAD4AAAA/AAAAQAAAAEEAAABCAAAAQwAAAEQAAABFAAAARgAAAEcAAABIAAAASgAAAEsAAABMAAAATQAAAE4AAABPAAAAUAAAAFEAAABSAAAAUwAAAFQAAABVAAAAVgAAAFcAAABYAAAAWQAAAFoAAABcAAAAXQAAAF4AAABfAAAAYQAAAGIAAABjAAAAZAAAAGUAAABpAAAAbQAAAHEAAAB0AAAAdgAAAHgAAAB5AAAAgAAAAIcAAACIAAAAiQAAAIoAAACMAAAAkgAAAJYAAACZAAAAqgAAALcAAAC4AAAAvwAAAM4AAADQAAAA0wAAANgAAAAbAQAA"},"shape":[123],"dtype":"int32","order":"little"}],["num_reviews",{"type":"ndarray","array":{"type":"bytes","data":"UgYAAKcEAAD4AQAAnwEAAEwBAAAeAQAA5QAAAKYAAACcAAAAhgAAAIMAAABvAAAAZAAAAGAAAABSAAAAQgAAAEcAAAA9AAAAMAAAADMAAAAoAAAANAAAACUAAAAlAAAAJwAAABwAAAAcAAAAHgAAABgAAAAbAAAAGgAAAB8AAAATAAAAEgAAABAAAAAOAAAAEQAAABMAAAAOAAAAEAAAABIAAAAFAAAACQAAABAAAAASAAAACAAAAAMAAAAQAAAABwAAAAYAAAAHAAAABwAAAAcAAAANAAAACAAAAAgAAAAKAAAABgAAAAcAAAAFAAAABAAAAAQAAAAFAAAAAQAAAAQAAAADAAAABgAAAAUAAAADAAAABAAAAAgAAAABAAAAAwAAAAUAAAACAAAAAgAAAAQAAAAEAAAABgAAAAcAAAABAAAABQAAAAkAAAACAAAABAAAAAMAAAAFAAAAAgAAAAEAAAAFAAAACQAAAAMAAAACAAAAAQAAAAMAAAABAAAAAgAAAAMAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAACAAAAAgAAAAEAAAABAAAAAQAAAAEAAAABAAAA"},"shape":[123],"dtype":"int32","order":"little"}],["avg_usr_rating",{"type":"ndarray","array":{"type":"bytes","data":"mpmZmZmZEUAUrkfhehQSQB+F61G4HhJA7FG4HoXrEUBSuB6F61ERQFyPwvUoXBFAzczMzMzMEECkcD0K16MQQBSuR+F6FBFAAAAAAAAAEUCF61G4HoURQDMzMzMzMxFAexSuR+F6EEBmZmZmZmYQQD0K16NwPRBAZmZmZmZmEUCuR+F6FK4QQHsUrkfhegxAmpmZmZmZEEAK16NwPQoPQJqZmZmZmQ9AexSuR+F6CkAAAAAAAAAQQPYoXI/C9RBAuB6F61G4EEApXI/C9SgRQEjhehSuRxBAAAAAAAAAEEDXo3A9CtcQQMP1KFyPwhBAMzMzMzMzDUDsUbgehesNQD0K16NwPQxAAAAAAAAADEB7FK5H4XoIQOF6FK5H4Q5APQrXo3A9DEDD9Shcj8ILQK5H4XoUrg1AAAAAAAAADEAfhetRuB4PQGZmZmZmZg5AH4XrUbgeD0B7FK5H4XoIQIXrUbgehQ9AAAAAAAAABkCkcD0K16MKQIXrUbgehQ9AUrgehetRCkCkcD0K16MOQHE9CtejcAtAUrgehetRCkBxPQrXo3ALQAAAAAAAABBAAAAAAAAABEAAAAAAAAAKQJqZmZmZmQlApHA9CtejDkAAAAAAAAAQQGZmZmZmZg5AAAAAAAAAEEAAAAAAAAAKQAAAAAAAAAhAAAAAAAAAFEAAAAAAAAAQQFyPwvUoXAVApHA9CtejCkAAAAAAAAAQQAAAAAAAAAhAAAAAAAAACEAAAAAAAAAGQAAAAAAAABBAUrgehetREUBmZmZmZmYOQAAAAAAAAARAAAAAAAAACEAAAAAAAAAOQAAAAAAAAAJApHA9CtejCkAfhetRuB4JQAAAAAAAABRAmpmZmZmZCUBcj8L1KFwFQAAAAAAAAABAAAAAAAAAAEBcj8L1KFwNQGZmZmZmZg5AAAAAAAAABEAAAAAAAAAUQJqZmZmZmRFAXI/C9ShcDUCuR+F6FK4SQAAAAAAAAAhAAAAAAAAAFEBcj8L1KFwNQAAAAAAAAPA/AAAAAAAACEAAAAAAAAAUQAAAAAAAABRAAAAAAAAAFEAAAAAAAAAQQAAAAAAAABRAAAAAAAAAEEAAAAAAAAAQQAAAAAAAAABAAAAAAAAA8D8AAAAAAAAQQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAABRAAAAAAAAA8D8AAAAAAAAUQAAAAAAAAPA/AAAAAAAAAEAAAAAAAAAQQAAAAAAAAAhAAAAAAAAACEAAAAAAAADwPwAAAAAAAPA/AAAAAAAAFEAAAAAAAAAUQAAAAAAAABBA"},"shape":[123],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p5040","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p5041"}}},"glyph":{"type":"object","name":"VBar","id":"p5036","attributes":{"x":{"type":"field","field":"word_cnt"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"num_reviews"},"line_color":{"type":"field","field":"num_reviews","transform":{"type":"object","name":"LinearColorMapper","id":"p5004","attributes":{"palette":["#5e4fa2","#3288bd","#66c2a5","#abdda4","#e6f598","#ffffbf","#fee08b","#fdae61","#f46d43","#d53e4f","#9e0142"],"low":1,"high":1618}}},"fill_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}},"hatch_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p5037","attributes":{"x":{"type":"field","field":"word_cnt"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"num_reviews"},"line_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p5038","attributes":{"x":{"type":"field","field":"word_cnt"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"num_reviews"},"line_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"num_reviews","transform":{"id":"p5004"}},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p5013","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p5026"},{"type":"object","name":"WheelZoomTool","id":"p5027","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p5028","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p5029","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p5030"},{"type":"object","name":"ResetTool","id":"p5031"},{"type":"object","name":"HelpTool","id":"p5032"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p5021","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p5022","attributes":{"num_minor_ticks":2,"desired_num_ticks":15,"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p5023"},"axis_label":"Review count","axis_label_standoff":4,"axis_label_text_font_size":"14px","axis_label_text_font_style":"bold","major_label_policy":{"type":"object","name":"AllLabels","id":"p5024"},"major_label_text_font_size":"10px"}}],"below":[{"type":"object","name":"LinearAxis","id":"p5016","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p5017","attributes":{"desired_num_ticks":20,"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p5018"},"axis_label":"Word count","axis_label_text_font_size":"14px","axis_label_text_font_style":"bold","major_label_standoff":4,"major_label_policy":{"type":"object","name":"AllLabels","id":"p5019"},"major_label_text_font_size":"10px"}}],"center":[{"type":"object","name":"Grid","id":"p5020","attributes":{"axis":{"id":"p5016"}}},{"type":"object","name":"Grid","id":"p5025","attributes":{"dimension":1,"axis":{"id":"p5021"},"minor_grid_line_color":"grey","minor_grid_line_alpha":0.1,"minor_grid_line_dash":[6,4]}},{"type":"object","name":"Legend","id":"p5042","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p5043","attributes":{"label":{"type":"value","value":"No. of Reviews"},"renderers":[{"id":"p5039"}]}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p5052').textContent;
+              const render_items = [{"docid":"5c05997b-1312-4e04-8482-7ac68029fb8a","roots":{"p5005":"f5b67856-5433-4ed2-a8cd-7e272d7de3db"},"root_ids":["p5005"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
